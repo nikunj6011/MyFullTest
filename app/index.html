@@ -1,6 +1,6 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -14,30 +14,27 @@
     <link rel="stylesheet" href="styles/main.css">
     <meta http-equiv="Access Control Allow Origin" content="*">
     <!-- endbuild -->
-  </head>
-  <body ng-app="desktopApp">
+</head>
+<body ng-app="desktopApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <!-- Add your site or application content here -->
     <div class="container">
-      <div ng-view=""></div>
+        <div ng-view=""></div>
     </div>
-
     <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-4"><img class="img-responsive" src="images/blue-star.png" alt="star"/></div>
-          <div class="col-xs-4"><img class="img-responsive" src="images/blue-star.png" alt="star"/></div>
-          <div class="col-xs-4"><img class="img-responsive" src="images/blue-star.png" alt="star"/></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4"><img class="img-responsive" src="images/blue-star.png" alt="star" /></div>
+                <div class="col-xs-4"><img class="img-responsive" src="images/blue-star.png" alt="star" /></div>
+                <div class="col-xs-4"><img class="img-responsive" src="images/blue-star.png" alt="star" /></div>
+            </div>
         </div>
-      </div>
     </div>
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -50,11 +47,10 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/tab.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/tab.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
