@@ -1,0 +1,20 @@
+<ul class="nav nav-tabs nav-justified" role="tablist" ng-controller="TabCtrl">
+  <li role="presentation"><a onclick="showTab(1)">Hillary {{count}}</a></li>
+  <li role="presentation"><a onclick="showTab(0)">Home</a></li>
+  <li role="presentation"><a onclick="showTab(2)">Donald</a></li>
+</ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="home">
+    <h1 id="title">Hillary vs. Donald</h1>
+    <div class="tweet-tab invisible" id="hillary">
+          <a class="twitter-timeline" data-chrome="nofooter" href="https://twitter.com/search?q=%23HillaryClinton%20Hillary%20Clinton" data-widget-id="763246402600247296"></a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+
+        <div class="tweet-tab invisible" id="donald">
+          <a class="twitter-timeline" data-chrome="nofooter" href="https://twitter.com/search?q=%23DonaldTrump%20Donald%20Trump" data-widget-id="763245631607406593"></a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+  </div>
+</div>
